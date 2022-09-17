@@ -263,3 +263,34 @@ input:checked ~ .bubble::after {
   cursor: pointer;
 }
 /* End of Todo Item Label Styling */
+
+/* Todo Item Todo Content Styling */
+.todo-item .todo-content {
+  flex: 1 1 0%;
+}
+/* End of Todo Item Todo Content Styling */
+
+/* Todo Item Todo Content Input Styling */
+.todo-item .todo-content input {
+  color: var(--dark);
+  font-size: 1.125rem;
+}
+/* End of Todo Item Todo Content Input Styling */
+
+/* Todo Item Actions Styling */
+.todo-item .actions {
+  display: flex;
+  align-items: center;
+}
+/* End of Todo Item Action Styling */
+
+/* Todo Item Actions Buttun Styling */
+.todo-item .actions button {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+/* End of Todo Item Actions Buttun Styling */
