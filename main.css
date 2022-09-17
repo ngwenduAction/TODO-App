@@ -129,3 +129,33 @@ h4 {
   font-size: 1.125rem;
 }
 /* End of Create Todo Input[Type="date"] Styling */
+
+/* Create Todo Options Styling */
+.create-todo .options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+/* End of Create Todo Options Styling */
+
+/* Create Todo Options label Styling */
+.create-todo .options label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+/* End of Create Todo Options label Styling */
+
+/* Input [Type="radio" & "checkbox"] Styling */
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+/* End of Input [Type="radio" & "checkbox"] Styling */
