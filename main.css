@@ -231,3 +231,35 @@ input:checked ~ .bubble::after {
   transition: 0.2s ease-in-out;
 }
 /* End of Create Todo Input[type="submit"] Styling */
+
+/* Create Todo Input[type="submit"]: Hover Styling */
+.create-todo input[type="submit"]:hover {
+  opacity: 0.75;
+}
+/* End of Create Todo Input[type="submit"]: Hover Styling */
+
+/* Todo List List Styling */
+.todo-list .list {
+  margin: 1rem 0;
+}
+/* End of Todo List List Styling */
+
+/* Todo List Todo Item Styling */
+.todo-list .todo-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+/* End of Todo List Todo Item Styling */
+
+/* Todo Item Label Styling */
+.todo-item label {
+  display: block;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+/* End of Todo Item Label Styling */
