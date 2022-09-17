@@ -39,3 +39,30 @@ body {
   color: var(--dark);
 }
 /* End of Body Styling */
+
+/* Section Styling */
+section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+/* End of Section Styling */
+
+/* H3 Styling */
+h3 {
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+/* End of H3 Styling */
+
+/* H4 Styling */
+h4 {
+  color: var(--grey);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+/* End of H4 Styling */
