@@ -32,3 +32,10 @@ button {
   cursor: initial;
 }
 /* End of Resets */
+
+/* Body Styling */
+body {
+  background: var(--light);
+  color: var(--dark);
+}
+/* End of Body Styling */
