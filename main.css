@@ -96,3 +96,36 @@ h4 {
   margin-top: 0rem;
 }
 /* End of New Todo Form Styling */
+
+/* Create Todo Input[Type="text"] Styling */
+.create-todo input[type="text"] {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  color: var(--dark);
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+/* End of Create Todo Input[Type="text"] Styling */
+
+/* Create Todo Input[Type="date"] Styling */
+.create-todo input[type="date"] {
+  display: inline-flex;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  align-items: center;
+  padding-inline-start: 1px;
+  cursor: pointer;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0px 0px 0px 0px;
+  box-shadow: var(--shadow);
+  background-color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+}
+/* End of Create Todo Input[Type="date"] Styling */
