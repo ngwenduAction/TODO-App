@@ -193,3 +193,41 @@ input[type="checkbox"] {
   transition: 0.2s ease-in-out;
 }
 /* End of Bubble ::After Styling */
+
+/* Bubble Personal ::After Styling */
+.bubble.personal::after {
+  background-color: var(--personal);
+  box-shadow: var(--personal-glow);
+}
+/* End of Bubble Personal ::After Styling */
+
+/* Input:Checked ~ Bubble::After Styling */
+input:checked ~ .bubble::after {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+/* End of Input:Checked ~ Bubble::After Styling */
+
+/* Create Todo Options Label Div Styling */
+.create-todo .options label div {
+  color: var(--dark);
+  font-size: 1.125rem;
+  margin-top: 1rem;
+}
+/* End of Create Todo Options Label Div Styling */
+
+/* Create Todo Input[type="submit"] Styling */
+.create-todo input[type="submit"] {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: var(--personal-glow);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+/* End of Create Todo Input[type="submit"] Styling */
