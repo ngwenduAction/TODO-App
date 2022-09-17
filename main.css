@@ -66,3 +66,33 @@ h4 {
   margin-bottom: 0.5rem;
 }
 /* End of H4 Styling */
+
+/* Greeting Title Styling */
+.greeting .title {
+  display: flex;
+}
+/* End of Greeting Title Styling */
+
+/* Greeting Title Input Styling */
+.greeting .title input {
+  margin-left: 0.5rem;
+  flex: 1 1 0%;
+  min-width: 0;
+}
+/* End of Greeting Title Input Styling */
+
+/* Greeting Title & Title Input Styling */
+.greeting .title,
+.greeting .title input {
+  color: var(--dark);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+/* End of Greeting Title & Title Input Styling */
+
+/* New Todo Form Styling */
+#new-todo-form {
+  display: block;
+  margin-top: 0rem;
+}
+/* End of New Todo Form Styling */
