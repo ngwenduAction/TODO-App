@@ -1,6 +1,6 @@
 # **TODO App**
 
-> A simple **todo app** built in _**HTML, CSS and JavaScript**_.
+> A simple **todo app** built in **_HTML, CSS and JavaScript_**.
 
 ---
 
@@ -16,8 +16,8 @@
 
 ---
 
-- Type-in your todo task under **_Create a Todo_**
-- Click **_Calendar Icon_** to Set Due Date\* under **_Create a Todo_**.
+- Type-in your todo task under **_Create a Todo._**
+- Click **_Calendar Icon_** to **_Set Due Date_** under **_Create a Todo._**
 - Click either **_Business_** or **_Personal_** under **_Pick a Category_**
 - Click **_Add Todo button_** under **_Pick a Category_** to create a task.
 
