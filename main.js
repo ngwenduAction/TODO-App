@@ -1,4 +1,3 @@
-// Local Storage
 window.addEventListener("load", () => {
   todos = JSON.parse(localStorage.getItem("todos")) || [];
   const nameInput = document.querySelector("#name");
@@ -15,9 +14,14 @@ window.addEventListener("load", () => {
   newTodoForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
+    const dueDateInput = document.querySelector("#datepicker");
+    const dueTimeInput = document.querySelector("#due-time");
+
     const todo = {
       content: e.target.elements.content.value,
       category: e.target.elements.category.value,
+      dueDate: dueDateInput.value,
+      dueTime: dueTimeInput.value,
       done: false,
       createdAt: new Date(),
     };
@@ -36,10 +40,13 @@ window.addEventListener("load", () => {
 });
 
 // Todos Functionality
+
 function DisplayTodos() {
   const todoList = document.querySelector("#todo-list");
 
   todoList.innerHTML = "";
+
+  todos = JSON.parse(localStorage.getItem("todos")) || [];
 
   todos.forEach((todo) => {
     const todoItem = document.createElement("div");
@@ -68,7 +75,9 @@ function DisplayTodos() {
     edit.classList.add("edit");
     deleteButton.classList.add("delete");
 
-    content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
+    content.innerHTML = `<input type="text" value="${todo.content}" readonly>
+    <div>Due Date: ${todo.dueDate} | Due Time: ${todo.dueTime}</div>
+    `;
     edit.innerHTML = "Edit";
     deleteButton.innerHTML = "Delete";
 
@@ -112,8 +121,9 @@ function DisplayTodos() {
     });
 
     deleteButton.addEventListener("click", (e) => {
-      todos = todos.filter((t) => t != todo);
+      todos = todos.filter((t) => t !== todo);
       localStorage.setItem("todos", JSON.stringify(todos));
+      todos = JSON.parse(localStorage.getItem("todos")) || [];
       DisplayTodos();
     });
   });
