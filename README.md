@@ -1,6 +1,6 @@
 # **TODO App**
 
-> > A simple **todo app** built in **_HTML, CSS and JavaScript_**.
+> A simple **todo app** built in **_HTML, CSS and JavaScript_**.
 
 ---
 
