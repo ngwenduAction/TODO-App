@@ -130,6 +130,25 @@ h4 {
 }
 /* End of Create Todo Input[Type="date"] Styling */
 
+/* Create Todo Input[Type="time"] Styling */
+.create-todo input[type="time"] {
+  display: inline-flex;
+  color: var(--business);
+  margin-bottom: 1.5rem;
+  align-items: center;
+  padding-inline-start: 1px;
+  cursor: pointer;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0px 0px 0px 0px;
+  box-shadow: var(--shadow);
+  background-color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+}
+/* End of Create Todo Input[Type="time"] Styling */
+
 /* Create Todo Options Styling */
 .create-todo .options {
   display: grid;
