@@ -20,10 +20,12 @@ window.addEventListener("load", () => {
   let undoStack = [];
   let redoStack = [];
 
+  // A function to add a new task
   function addNewTodo() {
     const dueDateInput = document.querySelector("#datepicker");
     const dueTimeInput = document.querySelector("#due-time");
 
+    // Object obtaining a each added task 
     const todo = {
       content: newTodoForm.elements.content.value,
       category: newTodoForm.elements.category.value,
@@ -33,6 +35,7 @@ window.addEventListener("load", () => {
       createdAt: new Date(),
     };
 
+    // Add the task to the data
     todos.push(todo);
     undoStack.push([...todos]); // Push a copy of the todos array onto the undo stack
     redoStack = []; // Clear the redo stack
@@ -68,8 +71,10 @@ window.addEventListener("load", () => {
 
     todoList.innerHTML = "";
 
+    // Getting the data from local storage
     todos = JSON.parse(localStorage.getItem("todos")) || [];
 
+    // For each task, the following must happen
     todos.forEach((todo) => {
       const todoItem = document.createElement("div");
       todoItem.classList.add("todo-item");
@@ -142,6 +147,7 @@ window.addEventListener("load", () => {
         });
       });
 
+      // The button to remove the task
       deleteButton.addEventListener("click", (e) => {
         todos = todos.filter((t) => t !== todo);
         localStorage.setItem("todos", JSON.stringify(todos));
