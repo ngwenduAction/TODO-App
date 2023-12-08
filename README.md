@@ -26,11 +26,3 @@
 - Click **_Add Todo button_** under **_Pick a Category_** to create a task.
 
 ---
-
-## **Status:**
-
-> Published, Working.
-
-Thanks!
-
-Ngwendu Gambu.
