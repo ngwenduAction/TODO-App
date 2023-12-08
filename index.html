@@ -49,7 +49,7 @@
             placeholder="e.g. make a video"
           />
 
-          <label for="anyDate">ADD DUE DATE</label>
+          <label for="datepicker">ADD DUE DATE</label>
           <input type="date" class="date" id="datepicker" />
 
           <label for="due-time">ADD DUE TIME</label>
@@ -93,8 +93,10 @@
       <!-- End of Todo List -->
 
       <!-- Undo/Redo buttons -->
-      <button id="undo-button" onclick="undo()">Undo</button>
-      <button id="redo-button" onclick="redo()">Redo</button>
+      <div class="btns">
+        <button id="undo-button" onclick="undo()"><i class="fas fa-undo"></i> Undo</button>
+        <button id="redo-button" onclick="redo()"><i class="fas fa-redo"></i> Redo</button>
+      </div>
       <!-- End of Undo/Redo buttons -->
     </main>
     <!-- End of App Wrapper -->
